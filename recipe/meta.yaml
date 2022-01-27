@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-aiopg" %}
-{% set version = "0.27b0" %}
+{% set version = "0.28b0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-instrumentation-aiopg-{{ version }}.tar.gz
-  sha256: 707a1a8df8e1b242846634f3a9b69a6cfa66f6a99510ad245692e195657a3182
+  sha256: ecb290093a7f63956ea69860b6438b03d848e1a864dd08a3bea03c445e0cd30a
 
 build:
   number: 0
@@ -21,9 +21,9 @@ requirements:
     - python >=3.6
   run:
     - opentelemetry-api ~=1.3
-    - opentelemetry-instrumentation ==0.27b0
-    - opentelemetry-instrumentation-dbapi ==0.27b0
-    - opentelemetry-semantic-conventions ==0.27b0
+    - opentelemetry-instrumentation ==0.28b0
+    - opentelemetry-instrumentation-dbapi ==0.28b0
+    - opentelemetry-semantic-conventions ==0.28b0
     - python >=3.6
     - wrapt <2.0.0,>=1.0.0
     # - opentelemetry-test ==0.24b0
@@ -35,6 +35,8 @@ requirements:
     # - opentelemetry-test-utils ==0.26b1
     # - aiopg <1.3.0,>=0.13.0
     # - opentelemetry-test-utils ==0.27b0
+    # - aiopg <1.3.0,>=0.13.0
+    # - opentelemetry-test-utils ==0.28b0
     # - aiopg <1.3.0,>=0.13.0
 
 test:
